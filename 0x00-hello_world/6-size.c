@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	printf("Size of a char: %d\n ", sizeof(char));
-	printf("Size of an int: %i\n ", sizeof(int));
-	printf("Size of a long int: %l", sizeof(long int));
-	printf("Size of a long long int: %ll\n", sizeof(long long int));
-	printf("Size of a float: %lu\n", sizeof(float));
+	printf("Size of a char: %d(s)\n ", sizeof(char));
+	printf("Size of an int: %i(s)\n ", sizeof(int));
+	printf("Size of a long int: %l(s)", sizeof(long int));
+	printf("Size of a long long int: %ll(s)\n", sizeof(long long int));
+	printf("Size of a float: %lu(s)\n", sizeof(float));
 	return (0);
 }
