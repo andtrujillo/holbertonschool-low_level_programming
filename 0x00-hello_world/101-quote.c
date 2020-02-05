@@ -1,9 +1,5 @@
 #include <stdio.h>
-/**
- * write - Function
- * Return: integer
- */
-int write(int filedes, const char *buf, unsigned int nbyte);
+#include <unistd.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
