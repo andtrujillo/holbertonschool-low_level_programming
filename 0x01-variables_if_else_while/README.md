@@ -17,11 +17,10 @@
 | 6-print_numberz.c | Program that prints all single digit numbers of base 10 starting from 0 without using printf, puts and only using putchar twice |
 | 7-print_tebahpla.c | Program that prints the lowercase alphabet in reverse |
 | 8-print_base16.c | Program that prints all the numbers of base 16 in lowercase |
-| 9-print_comb.c | Program that prints all possible combinations of single-digit numbers |
+| 9-print_comb.c | Program that prints all possible combinations of single-digit number |
+| 10-print_comb2.c | Program that prints the numbers from 00-99, have to be seperated by commas, followed by space, the numbers print in ascending order with two digits, using putchar(max: 5 times) |
 
 #  Advanced(optional):
-| --- | --- |
-| 10-print_comb2.c | Program that prints the numbers from 00-99, have to be seperated by commas, followed by space, the numbers print in ascending order with two digits, using putchar(max: 5 times) |
 | 101-print_comb4.c | Prints all possible different combinations of three digits seperated by commas followed by a space |
 | 102-print_comb5.c | Prints all the possible combinations of two two-digit numbers from 0-99 |
 
