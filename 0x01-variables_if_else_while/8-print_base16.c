@@ -8,10 +8,10 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 48; n < 58; n++)
 		putchar(n);
-	for (n = 'a'; n <= 'z'; n++)
+	for (n = 97; n <= 102; n++)
 		putchar(n);
-	puchar('\n');
+	putchar('\n');
 	return (0);
 }
