@@ -12,6 +12,7 @@ int main(void)
 		putchar(n);
 	for (n = (65 + 26); n < ((65 + 26) + 26); n++)
 		putchar(n);
+	putchar('\n');
 	return 0;
 }
 
