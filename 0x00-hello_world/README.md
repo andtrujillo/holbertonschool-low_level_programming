@@ -1,8 +1,6 @@
 # 0x00. C- Hello, World
-## Foundations
 ---
-### Holberton Foundations - Low-level programming & Algorithm ― 
-
+### Holberton Foundations - Low-level programming & Algorithm
 # Hatching out
 ---
 | Script Name | Description |
@@ -16,7 +14,7 @@
 | 6-size.c | C program executable that prints the size of various types on the computer it is compiled on |
 | [Blog Post on LinkedIn](https://www.linkedin.com/pulse/what-happens-when-you-type-gcc-mainc-andres-trujillo/)| What Happens When You Type 'gcc main.c' |
 | 100-intel | Script that generates assembly code using intel syntax |
-| 101-quote | C program executable that prints, 'and that piece of art is useful" - Dora Korpar, 2015-10-19' to standard error and returns 1 |
+| 101-quote | C program executable that prints, 'and that piece of art is useful" - Dora Korpar, 2015-10-19' to standard error and returns 1 while compile without any warnings using 'gcc -Wall' compile flag |
 ## System information
 ---
 ```
