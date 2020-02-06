@@ -6,15 +6,21 @@
  */
 int main(void)
 {
-	int n,z;
+	int n, z;
 
-	for (n = 0; n < 10; n++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(n);
-		for (z = 0; z < 10; z++)
+		for (z = 48; z < 58; z++)
+		{
+
+			putchar(n);
 			putchar(z);
-		
-		putchar(', ');
+			if (n != 57 || z !=  57)
+			{
+				putchar(44);
+			}
+			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
