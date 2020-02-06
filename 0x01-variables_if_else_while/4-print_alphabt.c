@@ -8,8 +8,9 @@ int main(void)
 {
 	int n;
 
-	for (n = 97; n < (97 + 26); n++)
-		if (n != 110 && n != 113)
-			putchar(n)
+	for (n = 97; n < 123; n++)
+		if (n != 113 || n != 101)
+			putchar(n);
+	putchar('\n');
 	return (0);
 }
