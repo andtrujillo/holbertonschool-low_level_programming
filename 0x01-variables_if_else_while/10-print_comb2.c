@@ -15,10 +15,8 @@ int main(void)
 
 			putchar(n);
 			putchar(z);
-			if (n != 57 || z !=  57)
-			{
+			if  (n != 57 || z != 57)
 				putchar(44);
-			}
 			putchar(32);
 		}
 	}
