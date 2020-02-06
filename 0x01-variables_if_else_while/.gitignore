@@ -1,2 +1,4 @@
 testfolder/
 a.out
+*.o
+*.s
