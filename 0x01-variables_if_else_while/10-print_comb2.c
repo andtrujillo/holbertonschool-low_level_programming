@@ -12,7 +12,6 @@ int main(void)
 	{
 		for (z = 48; z < 58; z++)
 		{
-
 			putchar(n);
 			putchar(z);
 			if  (n != 57 || z != 57)
