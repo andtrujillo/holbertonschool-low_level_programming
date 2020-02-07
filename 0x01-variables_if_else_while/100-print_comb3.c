@@ -17,13 +17,14 @@ int main(void)
 			{
 				putchar(n);
 				putchar(m);
+				if (n == 57 && m == 57)
+					break;
+
+				putchar(44);
+				putchar(32);
 			}
 
-			if (n == 57 && m == 57)
-				break;
 
-			putchar(44);
-			putchar(32);
 		}
 		offset++;
 	}
