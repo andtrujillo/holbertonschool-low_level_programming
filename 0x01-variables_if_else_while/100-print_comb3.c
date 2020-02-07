@@ -13,8 +13,11 @@ int main(void)
 
 		for (m = 48 + offset; m < 58; m++)
 		{
-			putchar(n);
-			putchar(m);
+			if (n != m)
+			{
+				putchar(n);
+				putchar(m);
+			}
 
 			if (n == 57 && m == 57)
 				break;
