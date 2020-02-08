@@ -21,7 +21,9 @@
 | 10-print_comb2.c | Program that prints the numbers from 00-99, have to be seperated by commas, followed by space, the numbers print in ascending order with two digits, using putchar(max: 5 times) |
 
 #  Advanced(optional):
+| Executable| Description |
 | --- | --- |
+| 100-print_comb3.c | Prints all possible different combinations of two digits |
 | 101-print_comb4.c | Prints all possible different combinations of three digits seperated by commas followed by a space |
 | 102-print_comb5.c | Prints all the possible combinations of two two-digit numbers from 0-99 |
 
