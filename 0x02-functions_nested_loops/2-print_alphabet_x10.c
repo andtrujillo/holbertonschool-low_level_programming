@@ -15,10 +15,10 @@ int main(void)
 		{
 			_putchar(i);
 		}
-		_putchar('\n');
 
 	}
 	while (a_ten_count++ < 11);
 
+	_putchar('\n');
 	return (0);
 }
