@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
  * main - Entry point of function that prints the times table of n
  * @n: The times table to be printed
