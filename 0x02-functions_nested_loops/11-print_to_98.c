@@ -6,8 +6,15 @@
  */
 void print_to_98(int num_)
 {
-	int hasPrinted = 0;
+	int hasPrinted = 0, hasCall = 0;
 	
+	if (hasCall)
+	{
+		_putchar('0' + (num_ / 10));
+		_puchar('0' + (num_ % 10));
+		_putchar('\n');
+		hasCall = 1;
+	}
 	if (hasPrinted)
 	{
 		_putchar(',');
@@ -34,4 +41,6 @@ void print_to_98(int num_)
 		}
 	}
 	hasPrinted = 1;
+	hasCall = 1;
 }
+
