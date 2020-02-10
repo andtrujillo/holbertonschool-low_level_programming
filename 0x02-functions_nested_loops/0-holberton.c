@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point to 0-holberton.c
  * Description: Program that prints Holberton and is followed by a newline
