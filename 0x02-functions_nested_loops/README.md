@@ -11,6 +11,7 @@ Using holberton.h and _putchar.c
 
 | --- | --- |
 | File | Description |
+| --- | --- |
 | 0-holberton.c | Prints Holberton |
 | 1-alphabet.c | Prints Alphabet, in lowercase |
 | 2-print_alphabet_x10.c | Prints the Alphabet ten times |
