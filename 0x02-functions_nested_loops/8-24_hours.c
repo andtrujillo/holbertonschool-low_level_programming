@@ -12,8 +12,8 @@ void jack_bauer(void)
 	{
 		hour1 = i / 10;
 		hour0 = i % 10;
-		
-		for (k = 0; k < 60; k++) 
+
+		for (k = 0; k < 60; k++)
 		{
 			min1 = k / 10;
 			min0 = k % 10;
