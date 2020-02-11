@@ -1,41 +1,33 @@
-#include "holberton.h"
-#include <stdio.h> 
+#include <stdio.h>
 
 void print_to_98(int num_)
 {
-	int i = 0, hasPrinted = 0;
+	int i = 0;
 
-	if (num_ <= 98)
+	for(i = num_; i <= 98; i++)
 	{
-		
-		for(i = num_; i <= 98; i++)
+		printf("%d", i);
+		if (i != 98)
 		{
-			if(!hasPrinted && num_ != 98)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			printf("%d", i);
+			putchar(',');
+			putchar(' ');
 		}
-		putchar('\n');
-		hasPrinted = 1;
-	}
 
-	hasPrinted = 0;
-	if (num_ >= 98) 
+	}
+	for (i = num_; i >= 98; i--)
 	{
-		for (i = num_; i >= 98; i--)
-		{
-			if(!hasPrinted && num_ != 98)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+		if (num_ == 98)
+			break;
 
-			printf("%d",i);
+		printf("%d",i);
+
+		if (i != 98)
+		{
+			putchar(',');
+			putchar(' ');
 		}
-		if(hasPrinted)
-			_putchar('\n');
-		hasPrinted = 1;
+
 	}
+	putchar('\n');
+
 }
