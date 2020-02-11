@@ -12,6 +12,7 @@ void times_table(void)
 	for (i = 0; i < 10; i++)
 	{
 		hasPrinted = 0;
+		_putchar('0');
 		for (k = 0; k < 10; k++)
 		{
 			sum = i * k;
@@ -26,11 +27,12 @@ void times_table(void)
 			{
 				_putchar((sum / 10) + '0');
 				_putchar((sum % 10) + '0');
-			} else
+			} else if (k != 0)
 			{
 				_putchar(' ');
 				_putchar((i * k) + '0');
 			}
+			
 
 			hasPrinted = 1;
 		}
