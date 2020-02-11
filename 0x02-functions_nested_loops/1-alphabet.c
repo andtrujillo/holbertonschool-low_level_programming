@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include "holberton.h"
 /**
  * print_alphabet - Function that prints the alphabet in lowercase.
  *
@@ -13,5 +13,5 @@ void print_alphabet(void)
 	for (i = 97; i < (97 + 26); i++)
 		_putchar(i);
 	_putchar('\n');
-	return (0);
+
 }
