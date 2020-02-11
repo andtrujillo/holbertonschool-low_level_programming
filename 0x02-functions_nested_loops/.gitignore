@@ -1,6 +1,7 @@
 a.out
 *.o
 *~
-#*#A
+#*#
 example
 *.swp
+*-main.c
