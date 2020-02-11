@@ -32,7 +32,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar((i * k) + '0');
 			}
-			
+
 
 			hasPrinted = 1;
 		}
