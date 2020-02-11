@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
 * print_to_98 - Function that prints all natural numbers from n to 98
-* @num: integer
-* Return: none
+* @num_: integer
+* Return: none void
 */
 void print_to_98(int num_)
 {
