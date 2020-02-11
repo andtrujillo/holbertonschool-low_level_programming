@@ -16,16 +16,12 @@ int main(void)
 			printf("%.0f, %.0f, ", firstFib, secondFib);
 		}
 
-		nextFib = firstFib + secondFib;
-		printf("%.0f ", nextFib);
-
-		if (start_print)
-			putchar(',');
+		nextFib = firstFib + secondFib;		
+		printf("%.0f, ", nextFib);
 
 		firstFib = secondFib;
 		secondFib = nextFib;
 		start_print = 0;
 	}
-	putchar('\n';
 	return (0);
 }
