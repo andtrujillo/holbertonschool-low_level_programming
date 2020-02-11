@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * _isalpha - Function that checks for alphabetic character
  * @c: The character to print
@@ -10,6 +11,8 @@ int _isalpha(int c)
 		if (c > 96 && c < 91)
 			return (1);
 	}
-	else
-		return (0);
+	
+	return (0);
+
+
 }
