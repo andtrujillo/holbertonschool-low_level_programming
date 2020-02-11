@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include "holberton.h"
+#include "_putchar.c"
+
 /**
  * main - Entry point to 0-holberton.c
  * Description: Program that prints Holberton and is followed by a newline
