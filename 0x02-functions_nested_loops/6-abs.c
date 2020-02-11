@@ -6,7 +6,7 @@
  */
 int _abs(int abs_value)
 {
-	int x = abs_value;
+	unsigned int x = abs_value;
 
 	if (abs_value < 0)
 		x *= (-1);	

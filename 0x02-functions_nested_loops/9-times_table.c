@@ -7,10 +7,11 @@
 
 void times_table(void)
 {
-	int i, k, hasPrinted = 0;
+	int i, k, sum, hasPrinted = 0;
 
 	for (i = 0; i < 10; i++)
 	{
+		hasPrinted = 0;
 		for (k = 0; k < 10; k++)
 		{
 			sum = i * k;
@@ -23,12 +24,12 @@ void times_table(void)
 
 			if (sum > 9) 
 			{
-				_putchar(sum / 10);
-				_putchar(sum % 10);
+				_putchar((sum / 10) + '0');
+				_putchar((sum % 10) + '0');
 			}else
 			{	
 				_putchar(' ');
-				_putchar(i * k);
+				_putchar((i * k) + '0');
 			}
 
 			hasPrinted = 1;

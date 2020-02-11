@@ -9,7 +9,6 @@ Hatching out.
 ```
 Using holberton.h and _putchar.c
 
-| --- | --- |
 | File | Description |
 | --- | --- |
 | 0-holberton.c | Prints Holberton |
