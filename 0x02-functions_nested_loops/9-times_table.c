@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * times_table - Prints times table starting with 0
- * 
+ *
  * Return: none
  */
 
@@ -15,19 +15,19 @@ void times_table(void)
 		for (k = 0; k < 10; k++)
 		{
 			sum = i * k;
-			
+
 			if (hasPrinted)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
 
-			if (sum > 9) 
+			if (sum > 9)
 			{
 				_putchar((sum / 10) + '0');
 				_putchar((sum % 10) + '0');
-			}else
-			{	
+			} else
+			{
 				_putchar(' ');
 				_putchar((i * k) + '0');
 			}
