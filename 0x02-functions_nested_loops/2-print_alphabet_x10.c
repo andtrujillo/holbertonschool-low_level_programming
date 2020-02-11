@@ -1,11 +1,12 @@
 #include<stdio.h>
+#include "holberton.h"
 /**
- * main - Entry point main function that prints the alphabet 10x then followed
+ * print_alphabet_x10 - Function that prints the alphabet 10x then followed
  * by a newline character.
  *
- * Return: Always 0 (Success)
+ * Return: none (void)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int i;
 	int a_ten_count = 0;
@@ -16,9 +17,6 @@ int main(void)
 			_putchar(i);
 		}
 
-	}
-	while (a_ten_count++ < 11);
-
-	_putchar('\n');
-	return (0);
+		_putchar('\n');
+	} while (a_ten_count++ < 9);
 }
