@@ -6,19 +6,15 @@
  */
 int main(void)
 {
-	long int i = 1, max = 4000000;
-	long int nextFib = 0, firstFib = 1, secondFib = 2;
-	long long int n = 0;
+	long n = 0, max = 4000000, sum = 0, firstFib = 1, secondFib = 2;
 
-	for(i < max)
+	while(firstFib < max && secondFib < max)
 	{
-		nextFib = firstFib + secondFib;
 		if ((nextFib % 2) == 0)
-			n+= nextFib;
-		
+			n+= sum;
+		sum = firstFib + secondFib;
 		firstFib = secondFib;
 		secondFib = nextFib;
-		i++;
 	}
 	printf("%ld\n", n);
 	return (0);
