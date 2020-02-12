@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	unsigned long int nextFib = 0, firstFib = 0, secondFib = 1;
+	long int nextFib = 0, firstFib = 0, secondFib = 1;
 	int i;
 	
 	for (i = 0; i < 50; i++)
@@ -15,16 +15,12 @@ int main(void)
 		secondFib = nextFib;
 
 		if (i != 49)
-		{
-			printf("%lu, ", nextFib);
-		}
+			printf("%ld, ", nextFib);
 		else
-		{
-			printf("%lu", nextFib);
-		}
+			printf("%ld\n", nextFib);
+		
 		
 	}
-	putchar('\n');
 	return (0);
 }
 
