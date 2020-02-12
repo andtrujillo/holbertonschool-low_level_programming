@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	long int max = 4000000;
+	long int i = 1, max = 4000000;
 	long int nextFib = 0, firstFib = 1, secondFib = 2;
 	long long int n = 0;
 
-	while(nextFib < max)
+	for(i < max)
 	{
 		nextFib = firstFib + secondFib;
 		if ((nextFib % 2) == 0)
@@ -18,6 +18,7 @@ int main(void)
 		
 		firstFib = secondFib;
 		secondFib = nextFib;
+		i++;
 	}
 	printf("%ld\n", n);
 	return (0);
