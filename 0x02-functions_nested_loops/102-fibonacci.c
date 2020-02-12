@@ -5,14 +5,16 @@
  */
 int main(void)
 {
-	unsigned long int nextFib = 0, firstFib = 1, secondFib = 2;
+	unsigned long int nextFib = 0, firstFib = 0, secondFib = 1;
 	int i;
 	
-	printf("%lu, %lu ", firstFib, secondFib);
-	for (i = 0; i < 49; i++)
+	for (i = 0; i < 50; i++)
 	{
-		nextFib = firstFib + secondFib;
-		if (i < 48)
+		nextFib = firstFib + secondFib;	
+		firstFib = secondFib;
+		secondFib = nextFib;
+
+		if (i != 49)
 		{
 			printf("%lu, ", nextFib);
 		}
@@ -20,8 +22,7 @@ int main(void)
 		{
 			printf("%lu", nextFib);
 		}
-		firstFib = secondFib;
-		secondFib = nextFib;
+		
 	}
 	putchar('\n');
 }
