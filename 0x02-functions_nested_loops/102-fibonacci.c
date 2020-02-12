@@ -8,7 +8,7 @@ int main(void)
 	unsigned long int nextFib = 0, firstFib = 1, secondFib = 2;
 	int i;
 	
-	printf("%ld, %ld ", firstFib, secondFib);
+	printf("%lu, %lu ", firstFib, secondFib);
 	for (i = 0; i < 49; i++)
 	{
 		nextFib = firstFib + secondFib;
