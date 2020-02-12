@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
+#include "holberton.h"
 /**
- * print_times_table- Entry point of function that prints the times table of n
+ * print_times_table - Function that prints the times table of n
  * @n: The times table to be printed
  * Return: void (none)
  */
