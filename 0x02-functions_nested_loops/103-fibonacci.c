@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long n = 0, max = 4000000, sum = 0, firstFib = 1, secondFib = 2;
+	long nextFib = 0, n = 0, max = 4000000, sum = 0, firstFib = 1, secondFib = 2;
 
 	while(firstFib < max && secondFib < max)
 	{
