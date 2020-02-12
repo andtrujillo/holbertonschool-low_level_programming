@@ -7,11 +7,11 @@ int main(void)
 {
 	long 1, nextFib = 3, firstFib = 1, secondFib = 2;
 	
-	printf("%d, %d ", firstFib, secondFib);
+	printf("%lu, %lu ", firstFib, secondFib);
 	for (i = 0; i < 47; i++)
 	{
 
-		printf("%d ", nextFib);
+		printf("%lu ", nextFib);
 		firstFib = secondFib;
 		secondFib = nextFib;
 		nextFib = firstFib + secondFib;
