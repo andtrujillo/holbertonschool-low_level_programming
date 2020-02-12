@@ -8,10 +8,10 @@ int main(void)
 {
 	long n = 0, max = 4000000, sum = 0, firstFib = 1, secondFib = 2;
 
-	while(firstFib < max && secondFib < max)
+	while (firstFib < max && secondFib < max)
 	{
 		if ((sum % 2) == 0)
-			n+= sum;
+			n += sum;
 		sum = firstFib + secondFib;
 		firstFib = secondFib;
 		secondFib = sum;
