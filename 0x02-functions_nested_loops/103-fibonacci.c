@@ -6,8 +6,9 @@
  */
 int main(void)
 {
-	int max = 4000000;
-	long int nextFib = 0, firstFib = 1, secondFib = 2, n = 0;
+	long int max = 4000000;
+	long int nextFib = 0, firstFib = 1, secondFib = 2;
+	long long int n = 0;
 
 	while(nextFib < max)
 	{
@@ -18,6 +19,6 @@ int main(void)
 		firstFib = secondFib;
 		secondFib = nextFib;
 	}
-	printf("%d\n", n);
+	printf("%ld\n", n);
 	return (0);
 }
