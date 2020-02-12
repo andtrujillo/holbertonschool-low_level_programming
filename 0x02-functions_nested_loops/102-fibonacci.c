@@ -5,18 +5,16 @@
  */
 int main(void)
 {
-	long 1, nextFib = 0, firstFib = 1, secondFib = 2;
+	long 1, nextFib = 3, firstFib = 1, secondFib = 2;
 	
 	printf("%d, %d ", firstFib, secondFib);
 	for (i = 0; i < 47; i++)
 	{
 
-		nextFib = firstFib + secondFib;
 		printf("%d ", nextFib);
-		
 		firstFib = secondFib;
 		secondFib = nextFib;
-
+		nextFib = firstFib + secondFib;
 	}
 }
 
