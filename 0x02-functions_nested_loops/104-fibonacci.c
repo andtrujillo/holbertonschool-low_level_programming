@@ -7,13 +7,12 @@
 int main(void)
 {
 	int count = 0;
-
-	unsigned long int current_f = 0;
-	unsigned long int current_b = 0;
-	unsigned long int first_f = 0;
-	unsigned long int	first_b = 2;
-	unsigned long int second_f = 0;
-	unsigned long int	second_b = 1;
+	unsigned long current_f = 0;
+	unsigned long current_b = 0;
+	unsigned long first_f = 0;
+	unsigned long	first_b = 2;
+	unsigned long second_f = 0;
+	unsigned long	second_b = 1;
 
 	printf("%lu, %lu, ", second_b, first_b);
 	while (count < 96)
@@ -31,17 +30,18 @@ int main(void)
 		second_b = first_b;
 		first_f = current_f;
 		first_b = current_b;
+
 		if (current_f == 0)
 		{
 			printf("%lu, ", current_b);
 		}
 		else
+		{
 			printf("%lu%06lu, ", current_f, current_b);
+		}
 		if (count == 95)
-			printf("%lu%06lu", current_f, current_b);
+			printf("%lu%06lu\n", current_f, current_b);
 		count++;
 	}
-	putchar('\n');
-
 	return (0);
 }
