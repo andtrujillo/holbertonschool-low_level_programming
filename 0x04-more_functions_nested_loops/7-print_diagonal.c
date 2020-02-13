@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * print_line - Function that draws a straight line in terminal window
- * @n: integer of the amount of times to print the line
+ * print_diagonal - Function that draws partial triangle
+ * @n: integer of the amount of times to print triangle on screen
  * Return: none
  */
 void print_diagonal(int n)
