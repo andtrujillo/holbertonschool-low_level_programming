@@ -8,21 +8,17 @@ void print_triangle(int size)
 {
 	int i, j;
 
+	if (i < 1)
+	{
+		_putchar('\n');
+	}
 	for (i = 0; i < size; i++)
 	{
-		if (i == 0)
-		{
-			_putchar('#');
-			break;
-		}
+		for (j = size; j > i; j--)
+			_putchar(' ');
 
-		for (j = size; j > 0; j--) /* Subtract from size to have proper count of spaces */
-		{
-			if (j != i && i != 0) /* No spaces at end of line(j != i) and when (i!=0) */
-				_putchar(' ');
-		}
-		_putchar(35);
-
+		for (k = 1; k < i; k++)
+			_putchar(35);
 	}
 	_putchar('\n');
 }
