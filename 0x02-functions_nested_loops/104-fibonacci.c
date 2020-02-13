@@ -6,22 +6,42 @@
  */
 int main(void)
 {
-	int i, start_print = 1;
-	float nextFib = 0, firstFib = 1, secondFib = 2;
+	int count = 0;
 
-	for (i = 0; i < 98; i++)
+	unsigned long int current_f = 0;
+	unsigned long int current_b = 0;
+	unsigned long int first_f = 0;
+	unsigned long int	first_b = 2;
+	unsigned long int second_f = 0;
+	unsigned long int	second_b = 1;
+
+	printf("%lu, %lu, ", second_b, first_b);
+	while (count < 96)
 	{
-		if (start_print)
+		current_f = first_f + second_f;
+		current_b = first_b + second_b;
+
+		if (current_b > 1000000)
 		{
-			printf("%.0f, %.0f, ", firstFib, secondFib);
+			current_f += current_b / 1000000;
+			current_b = current_b % 1000000;
 		}
 
-		nextFib = firstFib + secondFib;		
-		printf("%.0f, ", nextFib);
-
-		firstFib = secondFib;
-		secondFib = nextFib;
-		start_print = 0;
+		second_f = first_f;
+		second_b = first_b;
+		first_f = current_f;
+		first_b = current_b;
+		if (current_f == 0)
+		{
+			printf("%lu, ", current_b);
+		}
+		else
+			printf("%lu%06lu, ", current_f, current_b);
+		if (count == 95)
+			printf("%lu%06lu", current_f, current_b);
+		count++;
 	}
+	putchar('\n');
+
 	return (0);
 }
