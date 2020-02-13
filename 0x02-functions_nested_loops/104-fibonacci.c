@@ -37,7 +37,8 @@ int main(void)
 		}
 		else
 		{
-			printf("%lu%06lu, ", current_f, current_b);
+			if (count != 95)
+				printf("%lu%06lu, ", current_f, current_b);
 		}
 		if (count == 95)
 			printf("%lu%06lu\n", current_f, current_b);
