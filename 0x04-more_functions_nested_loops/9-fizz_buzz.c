@@ -31,7 +31,7 @@ void print_FizzBuzz(void)
 		if (print_space)
 		{
 			putchar(' ');
-			if (i == 100)
+			if (i == 99)
 				print_space = 0;
 		}
 	}
