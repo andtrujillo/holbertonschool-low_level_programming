@@ -4,9 +4,10 @@
  * or multiple of 5, print FizzBuzz.
  * Return: Always 0
 */
-int main(void)
+void print_FizzBuzz(void)
 {
-	int i;
+
+	int i, print_space = 1;
 
 	for (i = 1; i <= 100; i++)
 	{
@@ -26,10 +27,18 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		putchar(' ');
+
+		if (print_space)
+		{
+			putchar(' ');
+			if (i == 100)
+				print_space = 0;
+		}
 	}
-
 	putchar('\n');
-
+}
+int main(void)
+{
+	print_FizzBuzz();
 	return (0);
 }
