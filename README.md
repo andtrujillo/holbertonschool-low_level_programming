@@ -33,7 +33,7 @@ code for quick retrieval of data and to consume a minimal amount of CPU cycles.
 [Linux LN Command](https://www.linkedin.com/pulse/linux-ln-command-linked-files-andres-trujillo/)
 
 [ls \*\.c](https://medium.com/@t.estworldwide/what-happens-when-you-type-ls-c-25a0b77dc32b)
-
+----------------------------
 # 0x01. Variables, If-Else, While
 Project over - took place from 02-06-2020 to 02-07-2020 
  ---
