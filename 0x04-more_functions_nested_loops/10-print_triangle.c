@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - Function that prints a triangle using pound signs
+ * print_triangle - Function that prints a triangle using pound signs
  * @size: amount of pound signs that will be printed or size of triangle
  * Return: none (void)
  */
