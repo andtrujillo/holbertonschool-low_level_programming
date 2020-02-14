@@ -36,9 +36,10 @@ access to memory  and language grammar constructs that map efficiently to assemb
 code for quick retrieval of data and to consume a minimal amount of CPU cycles.
 
 ----------------------------
-# 0x01. Variables, If-Else, While
-Project over - took place from 02-06-2020 to 02-07-2020 
- ---
+# Holberton Foundations
+## 0x01. Variables, If-Else, While
+--- 
+Project over - took place from 02-06-2020 to 02-07-2020
 Goals Accomplished
 Ascii code- American Standard Code of Information Interchange
 GCC 4.8.4 flags - m32, m64, Wall, Wextra, Werror, pedantic
@@ -50,8 +51,10 @@ GCC flags
 > # _putchar.c
 > At [Holberton](https://www.holbertonschool.com), students are not allowed to use the standard library.
 > Students are only allowed to use syscalls and \_putchar.c to create their functions and programs.
-
-# 0x03. C - Debugging
+----------------------------
+# Holberton Foundations
+## 0x03. C - Debugging
+---
 Project over - took place from 02-11-2020 to 02-12-2020
 
 # 0x04. C - More functions, more nested loops
