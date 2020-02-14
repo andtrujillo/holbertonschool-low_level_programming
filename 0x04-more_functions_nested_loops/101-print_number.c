@@ -13,7 +13,8 @@ void print_number(int num_)
 		print_one_digit(-(unsigned int)num_);
 	}
 	else
-		print_unsigned_int(num_);
+		print_one_digit(num_);
+	
 }
 /**
  * print_unsigned_int - prints an unsigned integer
