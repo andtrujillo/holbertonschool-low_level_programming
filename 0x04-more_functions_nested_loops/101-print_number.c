@@ -14,10 +14,10 @@ void print_number(int num_)
 	}
 	else
 		print_one_digit(num_);
-	
+
 }
 /**
- * print_unsigned_int - prints an unsigned integer
+ * print_one_digit - prints an unsigned integer
  * @num_: an unsigned integer to print
  * Return: always void
  */
