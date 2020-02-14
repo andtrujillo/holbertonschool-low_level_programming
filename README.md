@@ -3,12 +3,13 @@
  * 0x00. C- Hello, World
  ---
 Goals Accomplished
-GCC flags - m32, m64, Wall, Werror, Wextra, pedantic
-puts
-putchar
-sizeof
-What happens when you type `gcc main.c`?
-[Blog Post- LinkedIn](https://www.linkedin.com/pulse/what-happens-when-you-type-gcc-mainc-andres-trujillo/)
+1. GCC flags - m32, m64, Wall, Werror, Wextra, pedantic
+2. puts
+3. putchar
+4. sizeof
+5. What happens when you type `gcc main.c`?
+
+ * [Blog Post- LinkedIn](https://www.linkedin.com/pulse/what-happens-when-you-type-gcc-mainc-andres-trujillo/)
 The C programming language is awesome because the majority of the world runs on computers. Our first enterprise computers were Unix based and being the epitome of gritty and hardworking as all the greatest minds in the world congregated to learn and invest time towards propelling the human race forward.
 
 ## Founder of the C Language
@@ -33,8 +34,7 @@ code for quick retrieval of data and to consume a minimal amount of CPU cycles.
 
 [ls \*\.c](https://medium.com/@t.estworldwide/what-happens-when-you-type-ls-c-25a0b77dc32b)
 
-# Holberton Foundations
- * 0x01. Variables, If-Else, While
+# 0x01. Variables, If-Else, While
 Project over - took place from 02-06-2020 to 02-07-2020 
  ---
 Goals Accomplished
@@ -42,20 +42,17 @@ Ascii code- American Standard Code of Information Interchange
 GCC 4.8.4 flags - m32, m64, Wall, Wextra, Werror, pedantic
 Betty Linter installation
 Printf
-# Holberton Foundations
- * 0x02. C - Functions, nested loops
+# 0x02. C - Functions, nested loops
 Header files, #include statements
 GCC flags
 > # _putchar.c
 > At [Holberton](https://www.holbertonschool.com), students are not allowed to use the standard library.
 > Students are only allowed to use syscalls and \_putchar.c to create their functions and programs.
 
-# Holberton Foundations
- * 0x03. C - Debugging
+# 0x03. C - Debugging
 Project over - took place from 02-11-2020 to 02-12-2020
 
-# Holberton Foundations
- * 0x04. C - More functions, more nested loops
+# 0x04. C - More functions, more nested loops
 
 ---
 ```
