@@ -10,6 +10,11 @@ Goals Accomplished
 5. What happens when you type `gcc main.c`?
 
  * [Blog Post- LinkedIn](https://www.linkedin.com/pulse/what-happens-when-you-type-gcc-mainc-andres-trujillo/)
+ 
+ * [Linux LN Command](https://www.linkedin.com/pulse/linux-ln-command-linked-files-andres-trujillo/)
+
+ * [ls \*\.c](https://medium.com/@t.estworldwide/what-happens-when-you-type-ls-c-25a0b77dc32b)
+
 The C programming language is awesome because the majority of the world runs on computers. Our first enterprise computers were Unix based and being the epitome of gritty and hardworking as all the greatest minds in the world congregated to learn and invest time towards propelling the human race forward.
 
 ## Founder of the C Language
@@ -30,9 +35,6 @@ robots and large high tech machinery because its compiler provides low-level
 access to memory  and language grammar constructs that map efficiently to assembly 
 code for quick retrieval of data and to consume a minimal amount of CPU cycles.
 
-[Linux LN Command](https://www.linkedin.com/pulse/linux-ln-command-linked-files-andres-trujillo/)
-
-[ls \*\.c](https://medium.com/@t.estworldwide/what-happens-when-you-type-ls-c-25a0b77dc32b)
 ----------------------------
 # 0x01. Variables, If-Else, While
 Project over - took place from 02-06-2020 to 02-07-2020 
