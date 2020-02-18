@@ -7,7 +7,7 @@
 int _atoi(char *str_to)
 {
 	int sign_count = 0;
-	int result = 0;
+	unsigned int result = 0;
 	int work = 0;
 
 	for (; *str_to != '\0'; str_to++)
