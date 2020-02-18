@@ -4,26 +4,18 @@
  * @string: character string array to be flipped via pointer
  * Return: 0
  */
-void rev_string(char *string)
+void rev_string(char *s)
 {
-	int i = 0;
-	int j = 0;
-	int k;
-	int rev_string[2048];
+	char *copy = s;
+	char rev;
 
-	while (string[i] != '\0')
-		i++;
-	k = i;
-	while ((i != 0) && (string[j] != '\0'))
+	while (*copy)
+		copy++; 	
+	copy = copy - 1;
+	while (s < copy)
 	{
-		rev_string[i] = string[j];
-		j++;
-		i--;
-	}
-	i = 0;
-	while ((rev_string[i] != '\0') && (i < k))
-	{
-		string[i] = rev_string[i + 1];
-		i++;
+		rev = *s;	
+		*s++ = *copy;
+		*copy-- = rev;
 	}
 }
