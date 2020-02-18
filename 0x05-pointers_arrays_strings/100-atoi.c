@@ -1,3 +1,8 @@
+/**
+* _atoi - Function that converts a character array to an integer
+* @str_to: String to be converted to unsigned integer
+* Return: integer
+*/
 int _atoi(char *str_to)
 {
 	int sign_count = 1;
