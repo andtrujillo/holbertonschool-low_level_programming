@@ -7,18 +7,13 @@
 */
 void print_array(int *a, int n)
 {
-	int size = 0;
-	int i, hasPrinted = 0;
+	int i;
 
 	for (i = 0; i < n; i++)
 	{
-		if (hasPrinted)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		printf("%d", a[i]);
-		hasPrinted = 1;
+		if (i < n - 1)
+			printf("%d, ", a[i]);
+		else
+			printf("%d\n", a[i]);		
 	}
-	putchar('\n');
 }
