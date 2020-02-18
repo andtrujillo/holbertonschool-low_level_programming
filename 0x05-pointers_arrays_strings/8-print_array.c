@@ -9,12 +9,9 @@
 void print_array(int *a, int n)
 {
 	int size = 0;
-
-	size = n;
-
 	int i, hasPrinted = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (hasPrinted)
 		{
