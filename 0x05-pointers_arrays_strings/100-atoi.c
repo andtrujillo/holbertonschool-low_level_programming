@@ -16,6 +16,10 @@ int _atoi(char *str_to)
 		{
 			sign_count--;
 		}
+		if (*str_to == '+')
+		{
+			sign_count++;
+		}
 		if (*str_to >= '0' && *str_to <= '9')
 		{
 			work = 1;
@@ -37,6 +41,8 @@ int _atoi(char *str_to)
 		sign_count = -1;
 		result = result * -1;
 	}
+	if (result == 0)
+		result = 0;
 
 	return (result);
 }
