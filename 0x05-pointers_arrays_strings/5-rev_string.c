@@ -6,16 +6,15 @@
  */
 void rev_string(char *string)
 {
-	char *src = string;
 	char rev_string[_strlen(string)];
 	int i, j;
 
-	for (i = _strlen(string) - 1, j = 0; i >= 0, j < _strlen(string); i--, j++)
+	for (i = _strlen(string) - 1, j = 0; i >= 0; i--, j++)
 		rev_string[j] = string[i];
+	int size = sizeof(rev_string);
 
-	for (i = 0; i < sizeof(rev_string); i++)
+	for (i = 0; i < size; i++)
 		string[i] = rev_string[i];
-	_putchar('\n');
 }
 /**
  * _strlen - Function that counts the characters in array
