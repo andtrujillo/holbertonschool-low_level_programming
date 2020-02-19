@@ -7,22 +7,28 @@
 */
 int main(void)
 {
-	char alpha_nums[62]
-		=	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghipqrstuvwxyz0123456789";
-	char arr[2048] = 0;
-	int sum = 0, i = 0, num = 0, k = 0;
+	char _nums[124] =	"abcdefghipqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+	char arr[256];
+	int sum = 0, i, num;
+	char k;
 
 	srand(time(0));
-	while (sum < 2772 - 'z')
+
+	for (i = 0; sum < (2772 - 'z');)
 	{
 		num = rand() % 62;
-		sum += alpha_nums[num];
-		arr[i] = alpha_nums[num];
-		i++;
+		if (sum + _nums[num] >= 2772)
+			continue;
+		else
+		{
+			arr[i] = _nums[num];
+			sum += arr[i];
+			i++;
+		}
 	}
 	k = 2772 - sum;
 	arr[i] = k;
-
+	sum += k;
 	printf("%s", arr);
 	return (0);
 }
