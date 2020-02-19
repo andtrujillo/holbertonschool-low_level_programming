@@ -9,10 +9,7 @@ int main(void)
 
 	char alpha_nums[62] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghipqrstuvwxyz0123456789";
 	char arr[2048];
-	int sum = 0;
-	int i = 0;
-	int num = 0;
-	int k = 0;
+	int sum = 0, i = 0, num = 0, k = 0;
 
 while (sum <  2772 - 'z')
 {
