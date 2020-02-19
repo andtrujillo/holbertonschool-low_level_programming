@@ -7,7 +7,7 @@ int main(void)
 
 	srand(time(0));
 
-	char *alpha_nums = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghipqrstuvwxyz0123456789";
+	char alpha_nums[62] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghipqrstuvwxyz0123456789";
 	char arr[2048];
 	int sum = 0;
 	int i = 0;
