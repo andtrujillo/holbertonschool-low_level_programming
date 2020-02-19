@@ -24,6 +24,6 @@ while (sum <  2772 - 'z')
 	k = 2772 - sum;
 	arr[i] = k;
 
-	printf("%s\n", arr);
+	printf("%s", arr);
 	return (0);
 }
