@@ -1,4 +1,3 @@
-
 #include "holberton.h"
 /**
  * _strcat - Function that concats two strings
@@ -10,7 +9,7 @@ char *_strcat(char *dest, char *src)
 {
 	int dest_length = _strlen(dest);
 	int i = 0;
-	
+
 	for (i = 0; src[i] != '\0'; i++)
 	{
 		dest[i + dest_length] = src[i];
@@ -24,7 +23,7 @@ char *_strcat(char *dest, char *src)
 */
 int _strlen(char *str)
 {
-  int length = 0;
+	int length = 0;
 
 	while (*str++)
 	{
