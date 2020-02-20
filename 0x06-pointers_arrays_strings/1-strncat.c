@@ -10,20 +10,20 @@ char *_strncat(char *dest, char *src, int n)
 	int dest_length = _strlen(dest);
 	int length_src = _strlen(src);
 	int i = 0;
-	
+
 	for (i = 0; i < n; i++)
 	{
-		if(src[i] != '\0')
+		if (src[i] != '\0')
 			dest[i + dest_length] = src[i];
 		else
 			break;
 	}
 
-	if(length_src < n)
+	if (length_src < n)
 		dest[dest_length + i] = '\0';
 
 	return (dest);
-	
+
 }
 /**
 * _strlen - length of string
@@ -32,7 +32,7 @@ char *_strncat(char *dest, char *src, int n)
 */
 int _strlen(char *str)
 {
-  int length = 0;
+	int length = 0;
 
 	while (*str++)
 	{
