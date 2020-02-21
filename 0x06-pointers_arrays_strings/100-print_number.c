@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+void print_one_digit(unsigned int n);
 /**
  * print_number - print num_ with putchar
  * @num_: number to print
