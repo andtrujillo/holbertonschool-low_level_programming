@@ -7,7 +7,7 @@
 void reverse_array(int *rev_array, int length_arr)
 {
 	int i, j;
-	int flipped[length_arr];
+	int flipped[5000];
 
 	for (i = 0; i < length_arr ; i++)
 	{
