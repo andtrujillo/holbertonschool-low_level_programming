@@ -4,17 +4,20 @@
  * @rev_arr: array to be reversed
  * @length_arr: length of array
  */
-void reverse_array(int *rev_array, int length_arr)
+void reverse_array(int *rev_arr, int length_arr)
 {
+	int tmp;
 	int i, j;
-	int flipped[5000];
 
-	for (i = 0; i < length_arr ; i++)
+	i = 0;
+	j = length_arr - 1;
+
+	while (i < j)
 	{
-		flipped[i] = rev_array[i];
-	}
-	for (j = 0, i = length_arr - 1; i >= 0 && j < length_arr; i--, j++)
-	{
-		rev_array[j] = flipped[i];
+		tmp = rev_arr[i];
+		rev_arr[i] = rev_arr[j];
+		rev_arr[j] = tmp;
+		i++;
+		j--;
 	}
 }
