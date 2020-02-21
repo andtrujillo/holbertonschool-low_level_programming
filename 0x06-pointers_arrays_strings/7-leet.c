@@ -12,7 +12,7 @@ char *leet(char *un_leet)
 
 	for (i = 0; un_leet[i] != '\0'; i++)
 	{
-		for (j = 0; j < 11; j++)
+		for (j = 0; characters[j] != '\0'; j++)
 		{
 			if (un_leet[i] == characters[j])
 				un_leet[i] == leet[j];
