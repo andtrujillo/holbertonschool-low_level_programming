@@ -7,8 +7,8 @@
 char *leet(char *un_leet)
 {
 	int i, j;
-	char characters[] = "aAeEoOtTlL";
-	char leet[] = "4433007711";
+	char characters[11] = "aAeEoOtTlL";
+	char leet[11] = "4433007711";
 
 	for (i = 0; un_leet[i] != '\0'; i++)
 	{
@@ -16,7 +16,6 @@ char *leet(char *un_leet)
 		{
 			if (un_leet[i] == characters[j])
 				un_leet[i] == leet[j];
-
 		}
 	}
 	return (un_leet);
