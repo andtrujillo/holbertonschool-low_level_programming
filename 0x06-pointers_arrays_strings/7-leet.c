@@ -6,17 +6,23 @@
  */
 char *leet(char *un_leet)
 {
-	int i, j;
-	char characters[11] = "aAeEoOtTlL";
-	char leet[11] = "4433007711";
+	char characters[] = "aeotlAEOTL";
+	char leet[] = "43071";
+	unsigned int i, j;
 
-	for (i = 0; un_leet[i] != '\0'; i++)
+	i = 0;
+	while (un_leet[i])
 	{
-		for (j = 0; characters[j] != '\0'; j++)
+		j = 0;
+		while (j < 5)
 		{
-			if (un_leet[i] == characters[j])
-				un_leet[i] == leet[j];
+			if (un_leet[i] == characters[j] || un_leet[i] == characters[j + 5])
+				un_leet[i] = leet[j];
+			else
+				un_leet[i] = un_leet[i];
+			j++;
 		}
+		i++;
 	}
 	return (un_leet);
 }
