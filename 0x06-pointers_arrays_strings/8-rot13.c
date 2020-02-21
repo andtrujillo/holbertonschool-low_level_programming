@@ -6,16 +6,19 @@
  */
 char *rot13(char *rot_str)
 {
-	char *input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ";
-	char *output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char a1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
+	char a2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
 	int i, j;
 
-	for (i = 0; i < _strlen(rot_str); i++)
+	for (i = 0; rot_str[i] != '\0'; i++)
 	{
-		for (j = 0; j < _strlen(output); j++)
+		for (j = 0; j < _strlen(a2); j++)
 		{
-			if (rot_str[i] == input[j])
-				rot_str[i] = output[j];
+			if (rot_str[i] == a1[j])
+			{
+				rot_str[i] = a2[j];
+				break;
+			}
 		}
 	}
 
@@ -32,4 +35,16 @@ int _strlen(char *s)
 	while (*s++)
 		l++;
 	return (l);
+}
+char *string_toupper(char *s)
+{
+	int i;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] >= 'a' && s[i] <= 'z')
+		{
+			s[i] -= 32;
+		}
+	}
+		return (s);
 }
