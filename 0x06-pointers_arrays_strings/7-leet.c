@@ -15,8 +15,8 @@ char *leet(char *un_leet)
 	{
 		for (j = 0; j < _strlen(characters); j++)
 		{
-			if (characters[i] == un_leet[j])
-				un_leet[j] = leet[i];
+			if (characters[j] == un_leet[i])
+				un_leet[i] = leet[j];
 		}
 	}
 	return (un_leet);
