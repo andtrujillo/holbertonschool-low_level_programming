@@ -12,7 +12,7 @@ char *rot13(char *rot_str)
 
 	for (i = 0; rot_str[i] != '\0'; i++)
 	{
-		for (j = 0; j < _strlen(a2); j++)
+		for (j = 0; j < 53; j++)
 		{
 			if (rot_str[i] == a1[j])
 			{
@@ -23,17 +23,4 @@ char *rot13(char *rot_str)
 	}
 
 	return (rot_str);
-}
-/**
- * _strlen - function that counts length of string
- * @s: string to determine length
- * Return: length of string
- */
-int _strlen(char *s)
-{
-	int l = 0;
-
-	while (*s++)
-		l++;
-	return (l);
 }
