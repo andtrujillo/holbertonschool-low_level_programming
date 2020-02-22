@@ -31,10 +31,10 @@ char *infinite_add(char *first, char *second, char *r, int size)
 			r[i] = result;
 		}
 	}
-	while(i != 0)
+	while(index != 0)
 	{
 		r[i] = 0 + (second[i] - '0');
-		i--;
+		index--;
 	}
 	return (r);
 }
