@@ -47,8 +47,10 @@ char *infinite_add(char *first, char *second, char *r, int size)
  {
   if (n > 0)
     n *= 1;
-  else
-    n *= -1
+  else if (n < 0)
+    n *= -1;
+else
+n = 0;
   return (n);
  }
  int _strlen(char *s)
