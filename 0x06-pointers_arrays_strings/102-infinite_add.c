@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * infinite_add - Function that takes two array of numbers and adds them
- * @first_num: First number to be added
- * @second_num: Second number to add to first number
+ * @first: First number to be added
+ * @second: Second number to add to first number
  * Return: zero, on failure otherwise returns character array
  */
 char *infinite_add(char *first, char *second, char *r, int size)
@@ -38,28 +38,11 @@ char *infinite_add(char *first, char *second, char *r, int size)
 	}
 	return (r);
 }
-int _abs(int n)
-{
-	int p = 1;
-	
-	if (n < 0)
-		p *= -1;
-	else
-		p *= 1;
-	return (p);
-		
-}
-int _strlen(char *n)
-{
-	int length = 0;
-	while(*n++)
-		length++;
-	return (length);
-} /**
-  * _abs - Function that returns absolute value of integer
-  * @n: Number passed to function to return the absolute 
-  * Return: integer always (Success)
-  */
+/**
+ * _abs - Function that returns absolute value of integer
+ * @n: Number passed to function to return the absolute 
+ * Return: integer always (Success)
+ */
  int _abs(int n)
  {
   if (n > 0)
