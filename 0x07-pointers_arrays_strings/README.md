@@ -23,13 +23,13 @@ Multi-dimensional arrays are not like normal arrays. They hold multiple arrays o
 
 ### What are the most common standard library functions to manipulate strings?
 The most common ones are:  
-	* strcat - Concats two strings
-	* strchr - String scanner for characters
-	* strcmp - Compares two strings and returns Ascii value difference
-	* strcpy - Copies two strings from src to dest
-	* strlen - Gets length of character array
-	* strncpy - Copies two strings, n bytes
-	* strncmp - Compares n bytes of two strings  
+* strcat - Concats two strings
+* strchr - String scanner for characters
+* strcmp - Compares two strings and returns Ascii value difference
+* strcpy - Copies two strings from src to dest
+* strlen - Gets length of character array
+* strncpy - Copies two strings, n bytes
+* strncmp - Compares n bytes of two strings  
 `mem` functions manipulate strings arbitrarily without regard to the null character
 `str` functions manipulate character arrays that are null-terminated
 `strn` functions manipulate character array sequences of non-null characters
