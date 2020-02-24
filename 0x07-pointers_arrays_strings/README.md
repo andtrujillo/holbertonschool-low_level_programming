@@ -30,7 +30,11 @@ The most common ones are:
 * strlen - Gets length of character array
 * strncpy - Copies two strings, n bytes
 * strncmp - Compares n bytes of two strings  
+---
 `mem` functions manipulate strings arbitrarily without regard to the null character
 `str` functions manipulate character arrays that are null-terminated
-`strn` functions manipulate character array sequences of non-null characters
+`strn` functions manipulate character array sequences of non-null characters  
 
+---
+```uname -r```
+Linux vagrant-ubuntu-trusty-64 3.13.0-170-generic
