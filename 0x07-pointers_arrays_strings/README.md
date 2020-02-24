@@ -31,8 +31,8 @@ The most common ones are:
 * strncpy - Copies two strings, n bytes
 * strncmp - Compares n bytes of two strings  
 ---
-`mem` functions manipulate strings arbitrarily without regard to the null character
-`str` functions manipulate character arrays that are null-terminated
+`mem` functions manipulate strings arbitrarily without regard to the null character  
+`str` functions manipulate character arrays that are null-terminated  
 `strn` functions manipulate character array sequences of non-null characters  
 
 ---
