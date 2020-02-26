@@ -6,10 +6,13 @@
  */
 int factorial(int n)
 {
-	int prime = 0;
+	int f;
 
-	if (n > 1)
-		prime += factorial(n - 1);
-
-	return (prime);
+	if (n > 0)
+		f = factorial((n - 1)) * n;
+	if (n == 0)
+		return (1);
+	if (n < 0)
+		return (-1);
+	return (f);
 }
