@@ -12,6 +12,12 @@ int _sqrt_recursion(int n)
 	x = _sqrt(0, n);
 	return (x);
 }
+/**
+ * _sqrt - function that returns the square root of a number
+ * @i: start of check for square
+ * @n: number that we need to find square root of
+ * Return: the square root
+ */
 int _sqrt(int i, int n)
 {
 	int x;
