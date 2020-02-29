@@ -2,6 +2,7 @@
 #include <stdio.h>
 int check_argc(int a);
 int multiply_two_dig(int a, int b);
+int _atoi(char *s);
 
 /**
  * main - entry point of function that only multiplies two numbers
