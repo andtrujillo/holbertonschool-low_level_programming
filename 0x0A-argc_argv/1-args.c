@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 /* main - entry point of program that prints number of arguments
  * recieved followed by a newline
  * @argc: argument count
