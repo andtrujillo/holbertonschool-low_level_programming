@@ -41,9 +41,10 @@ int multiply_two_dig(int o, int l)
 int check_argc(int argumentative)
 {
 	int good = 1;
-	if (argumentative > 3 && argumentative < 3)
+	if (!argumentative > 3 && !argumentative < 3)
 		return (good);
 	else
+		puts("Error");
 		return (0);
 }
 /**
