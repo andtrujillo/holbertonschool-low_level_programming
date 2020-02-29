@@ -14,6 +14,7 @@ int _atoi(char *s);
 int main(int argc, char **argv)
 {
 	int i = argc;
+	
 	if (!check_argc(i))
 		return (1);
 	
