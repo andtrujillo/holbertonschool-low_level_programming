@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 int _atoi(char *s);
+
 
 /**
  * main - Main program that adds multiple numbers sent as arguments to function
@@ -20,7 +22,7 @@ int main(int argc, char **argv)
 	{
 		while (*argv != '\0')
 		{
-			if (!_atoi(*argv))
+			if (!isdigit(_atoi(*argv)))
 			{
 				puts("Error");
 				return (1);
