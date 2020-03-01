@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	{
 		while (*argv != '\0')
 		{
-			if (!isdigit(_atoi(*argv)))
+			if (isdigit(_atoi(*argv)))
 			{
 				puts("Error");
 				return (1);
