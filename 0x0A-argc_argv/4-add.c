@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		printf("%d\n", sum);
 	}
 
-	if (argc == 1)
+	if (argc <= 2)
 		puts("0");
 
 	return (0);
