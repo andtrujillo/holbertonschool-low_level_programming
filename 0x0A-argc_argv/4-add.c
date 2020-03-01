@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 
 	if (argc > 1)
 	{
-		
+
 		while (argc > 0 && *argv != '\0')
 		{
 			if (!_atoi(*argv))
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		printf("%d\n", sum);
 	}
 
-	if (argc == 0)
+	if (argc == 1)
 		puts("0");
 
 	return (0);
