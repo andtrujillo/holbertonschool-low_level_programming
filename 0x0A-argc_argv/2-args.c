@@ -10,8 +10,6 @@ int main(int argc, char *argv[])
 {
 	int i = argc;
 
-	if (i < 1)
-		return (puts(argv[1]));
 	while (i--)
 		printf("%s\n", *argv++);
 	return (0);
