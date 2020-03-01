@@ -16,10 +16,9 @@ int main(int argc, char **argv)
 
 	argv++;
 
-	if (argc > 1)
+	if (argc > 2)
 	{
-
-		while (argc > 0 && *argv != '\0')
+		while (*argv != '\0')
 		{
 			if (!_atoi(*argv))
 			{
