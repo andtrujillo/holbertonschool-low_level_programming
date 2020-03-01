@@ -1,4 +1,7 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+int _atoi(char *s);
+
 /**
  * main - Main program that adds multiple numbers sent as arguments to function
  * @argc: integer, the amount of arguments passed from the command line
@@ -8,9 +11,12 @@
  */
 int main(int argc, char **argv)
 {
-	if (argc == 1)
+
+	int i, flag = 0, sum = 0;
+
+	if (argc == 0)
 		printf("0\n");
-	int i, flag = 0;
+
 
 	for (i = 1; i < argc; i++)
 	{
@@ -21,7 +27,6 @@ int main(int argc, char **argv)
 		}
 	}
 
-	int sum = 0;
 
 	argv++;
 
