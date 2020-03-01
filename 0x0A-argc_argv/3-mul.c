@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point of function that only multiplies two numbers
  * @argc: integer that is the amount of arguments recieved by main
@@ -8,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-int a, b;
+	int a, b;
 
 	if (argc == 3)
 	{
@@ -18,7 +19,10 @@ int a, b;
 		printf("%d\n", a * b);
 	}
 	else
+	{
 		printf("Error\n");
+		return (1);
+	}
 
 	return (0);
 }
