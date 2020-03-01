@@ -37,8 +37,12 @@ int main(int argc, char **argv)
 
 		printf("%d\n", sum);
 	}
+	else
+	{
+		printf("Error\n");
+	}
 
-	return (0);
+	return (flag);
 }
 /**
 * _atoi - Function that converts a character array to an integer
