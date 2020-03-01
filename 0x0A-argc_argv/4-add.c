@@ -11,7 +11,7 @@ int _atoi(char *s);
  * Return: 0 on success otherwise 1 if one of the passed arguments are
  * not numbers.
  */
-int main(int argc, char **argv)
+int main(int __attribute__((unused))argc, char **argv)
 {
 
 	int sum = 0;
@@ -22,12 +22,13 @@ int main(int argc, char **argv)
 	{
 		while (*argv != '\0')
 		{
-			if (isdigit(_atoi(*argv)))
+			if (_atoi(*argv) == -1)
 			{
 				puts("Error");
 				return (1);
 			}
-			sum += _atoi(*argv++);
+			else
+				sum += atoi(*argv++);
 		}
 
 		printf("%d\n", sum);
@@ -51,6 +52,8 @@ int _atoi(char *str_to)
 
 	for (; *str_to != '\0'; str_to++)
 	{
+		if (!isdigit(*str_to))
+			return (-1);
 		if (*str_to == '-')
 		{
 			sign_count *= -1;
@@ -63,7 +66,7 @@ int _atoi(char *str_to)
 		if (*str_to < '0' || *str_to > '9')
 		{
 			if (work)
-				break;
+				return (-1);
 		}
 	}
 	if (result == 0)
