@@ -14,10 +14,6 @@ int main(int argc, char **argv)
 
 	int i, flag = 0, sum = 0;
 
-	if (argc == 0)
-		printf("0\n");
-
-
 	for (i = 1; i < argc; i++)
 	{
 		if (!_atoi(argv[i]))
@@ -27,19 +23,18 @@ int main(int argc, char **argv)
 		}
 	}
 
-
 	argv++;
 
-	if (!flag)
+	if (!flag && argc > 1)
 	{
 		while (argc > 0 && *argv != '\0')
 			sum += _atoi(*argv++);
 
 		printf("%d\n", sum);
 	}
-	else
+	else if (argc == 0)
 	{
-		printf("Error\n");
+		puts("0");
 	}
 
 	return (flag);
