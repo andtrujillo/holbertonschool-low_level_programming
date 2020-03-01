@@ -32,7 +32,8 @@ int main(int argc, char **argv)
 
 		printf("%d\n", sum);
 	}
-	else if (argc == 0)
+	
+	if (argc == 0)
 	{
 		puts("0");
 	}
