@@ -1,7 +1,4 @@
-
 #include <stdio.h>
-#include "holberton.h"
-
 /**
  * main - entry point of function that only multiplies two numbers
  * @argc: integer that is the amount of arguments recieved by main
@@ -22,7 +19,7 @@ int main(int argc, char **argv)
 	}
 	else
 		return (1);
-	
+
 	return (0);
 }
 /**
