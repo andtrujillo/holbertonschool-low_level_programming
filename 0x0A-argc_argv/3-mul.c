@@ -46,7 +46,7 @@ int check_argc(int argumentative)
 		return (good);
 	else
 		puts("Error");
-		return (0);
+	return (0);
 }
 /**
 * _atoi - Function that converts a character array to an integer
