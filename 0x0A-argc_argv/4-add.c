@@ -12,33 +12,30 @@ int _atoi(char *s);
 int main(int argc, char **argv)
 {
 
-	int i, flag = 0, sum = 0;
-
-	for (i = 1; i < argc; i++)
-	{
-		if (!_atoi(argv[i]))
-		{
-			printf("Error\n");
-			flag = 1;
-		}
-	}
+	int sum = 0;
 
 	argv++;
 
-	if (!flag && argc > 1)
+	if (argc > 1)
 	{
+		
 		while (argc > 0 && *argv != '\0')
+		{
+			if (!_atoi(*argv))
+			{
+				puts("Error");
+				return (1);
+			}
 			sum += _atoi(*argv++);
+		}
 
 		printf("%d\n", sum);
 	}
-	
-	if (argc == 0)
-	{
-		puts("0");
-	}
 
-	return (flag);
+	if (argc == 0)
+		puts("0");
+
+	return (0);
 }
 /**
 * _atoi - Function that converts a character array to an integer
