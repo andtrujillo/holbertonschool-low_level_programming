@@ -1,8 +1,6 @@
 
 #include <stdio.h>
-int check_argc(int a);
-int multiply_two_dig(int a, int b);
-int _atoi(char *s);
+#include "holberton.h"
 
 /**
  * main - entry point of function that only multiplies two numbers
@@ -14,17 +12,20 @@ int _atoi(char *s);
 int main(int argc, char **argv)
 {
 	int i = argc;
-	
-	if (!check_argc(i))
+
+	if (check_argc(i))
+	{
+		int a = _atoi(argv[1]);
+		int b = _atoi(argv[2]);
+
+		printf("%d\n", multiply_two_dig(a, b));
+	}
+	else
 		return (1);
 	
-	int a = _atoi(argv[1]);
-	int b = _atoi(argv[2]);
-
-	printf("%d\n", multiply_two_dig(a, b));
 	return (0);
 }
-/*
+/**
  * multiply_two_dig - multiplies two digits
  * @o: integer to do the long sum, quickly
  * @l: integer to do the long sum, as well
@@ -34,7 +35,7 @@ int multiply_two_dig(int o, int l)
 {
 	return (o * l);
 }
-/*
+/**
  * check_argc - checks argument count, very good
  * @argumentative: no like we reject
  * Return: integer if ok, 1 ok, else 0 not ok, ok.
@@ -42,10 +43,10 @@ int multiply_two_dig(int o, int l)
 int check_argc(int argumentative)
 {
 	int good = 1;
-	if (!argumentative > 3 && !argumentative < 3)
+
+	if (argumentative == 3)
 		return (good);
-	else
-		puts("Error");
+	puts("Error");
 	return (0);
 }
 /**
