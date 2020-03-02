@@ -12,12 +12,19 @@ int main(int argc, char **argv)
 {
 
 	if (argc != 2)
+	{
 		printf("Error\n");
+		return (1);
+	}
+	if (_atoi(argv[1]) < 0)
+		puts("0");
+	else
+	{
+		int change = _atoi(argv[1]);
+		int coins = make(change);
 
-	int change = _atoi(argv[1]);
-	int coins = make(change);
-
-	printf("%d\n", coins);
+		printf("%d\n", coins);
+	}
 	return (0);
 }
 /**
@@ -80,6 +87,8 @@ int _atoi(char *str_to)
 
 	for (; *str_to != '\0'; str_to++)
 	{
+		if (!isdigit(*str_to))
+			return (-1);
 		if (*str_to == '-')
 		{
 			sign_count *= -1;
@@ -92,10 +101,9 @@ int _atoi(char *str_to)
 		if (*str_to < '0' || *str_to > '9')
 		{
 			if (work)
-			break;
+				return (-1);
 		}
 	}
-
 	if (result == 0)
 		result = 0;
 
