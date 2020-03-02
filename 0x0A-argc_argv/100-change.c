@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 int make(int c);
+int _atoi(char *str_to);
 
 /**
  * main - entry point to our program that takes one command 
