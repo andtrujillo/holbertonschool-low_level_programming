@@ -1,24 +1,22 @@
 
-#include <stdio.h>
-int make(int c);
-int _atoi(char *str_to);
+#include "holberton.h"
 
 /**
- * main - entry point to our program that takes one command 
+ * main - entry point to our program that takes one command
  * line argument when run and converts to integer
  * @argc: argument count
  * @argv: argument vector
  * Return: 0 on success 1 otherwise
- */ 
+ */
 int main(int argc, char **argv)
 {
-	
+
 	if (argc != 2)
 		printf("Error\n");
 
 	int change = _atoi(argv[1]);
 	int coins = make(change);
-	
+
 	printf("%d\n", coins);
 	return (0);
 }
@@ -31,15 +29,13 @@ int main(int argc, char **argv)
  */
 int make(int c)
 {
-		
-	int q = 25, d = 10, n = 5, t = 2, p = 1;
-	int count = 0, amt_left = 0, coins = c;
+
+	int q = 25, d = 10, n = 5, t = 2, p = 1, count = 0, coins = c;
 
 	while (coins >= q)
 	{
 		coins = coins -  q;
 		count++;
-		
 		if (coins == 0)
 			return (count);
 	}
@@ -47,7 +43,6 @@ int make(int c)
 	{
 		coins -= d;
 		count++;
-		
 		if (coins == 0)
 			return (count);
 	}
@@ -55,7 +50,6 @@ int make(int c)
 	{
 		coins -= n;
 		count++;
-		
 		if (coins == 0)
 			return (count);
 	}
@@ -63,19 +57,16 @@ int make(int c)
 	{
 		coins -= t;
 		count++;
-		
 		if (coins == 0)
 			return (count);
 	}
-	while(coins)
+	while (coins)
 	{
 		coins--;
 		count++;
 	}
-	
 	return (count);
 }
-
 /**
 * _atoi - Function that converts a character array to an integer
 * @str_to: String to be converted to unsigned integer
@@ -104,7 +95,7 @@ int _atoi(char *str_to)
 			break;
 		}
 	}
-	
+
 	if (result == 0)
 		result = 0;
 
