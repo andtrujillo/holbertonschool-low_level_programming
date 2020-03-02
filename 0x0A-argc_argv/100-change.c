@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 int make(int c)
 {
 
-	int q = 25, d = 10, n = 5, t = 2, p = 1, count = 0, coins = c;
+	int q = 25, d = 10, n = 5, t = 2, count = 0, coins = c;
 
 	while (coins >= q)
 	{
