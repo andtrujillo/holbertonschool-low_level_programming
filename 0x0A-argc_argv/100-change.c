@@ -1,5 +1,8 @@
 
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+int make(int c);
 
 /**
  * main - entry point to our program that takes one command
