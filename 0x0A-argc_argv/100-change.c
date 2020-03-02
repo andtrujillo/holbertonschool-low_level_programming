@@ -36,31 +36,31 @@ int make(int c)
 
 	while (coins >= q)
 	{
-		coins = coins - (coins / q);
+		coins = coins -  q;
 		count++;
 		
-		if (amt_left == 0)
+		if (coins == 0)
 			return (count);
 	}
 	while (coins >= d)
 	{
-		coins -= (coins / d);
+		coins -= d;
 		count++;
 		
-		if (amt_left == 0)
+		if (coins == 0)
 			return (count);
 	}
 	while (coins >= n)
 	{
-		coins -= (coins / n);
+		coins -= n;
 		count++;
 		
-		if (amt_left == 0)
+		if (coins == 0)
 			return (count);
 	}
 	while (coins >= t)
 	{
-		coins -= (coins / t);
+		coins -= t;
 		count++;
 		
 		if (coins == 0)
