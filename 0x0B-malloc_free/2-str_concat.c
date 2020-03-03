@@ -28,15 +28,15 @@ char *str_concat(char *s1, char *s2)
 	}
 	k = i + j + 1;
 	dest = malloc(k * sizeof(char));
-	
+
 	if (dest == NULL)
 		return (NULL);
-	
+
 	for (l = 0; l < i; l++)
 		dest[l] = s1[l];
 	for (l = 0; l < j; l++)
 		dest[l + i] = s2[l];
-	
+
 	dest[i + j] = '\0';
 	return (dest);
 }
@@ -86,6 +86,6 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	
+
 	return (save);
 }
