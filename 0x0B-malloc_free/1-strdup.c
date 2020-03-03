@@ -10,15 +10,24 @@
 char *_strdup(char *str)
 {
 	char *ptr;
+	int i = 0;
+	int l = _strlen(str);
 
-	if (*str)
+	if (str == NULL)
+		return (NULL);
+
+	ptr = (char *)malloc(l + 1);
+	
+	if (ptr == NULL)
+		return (NULL);
+
+	while (i <= l)
 	{
-		ptr = (char *)malloc(_strlen(str) * sizeof(char));
+		ptr[i] = str[i];
+		i++;
 	}
-	else
-		return (0);
 
-	_memcpy(ptr, str, _strlen(str));
+	/*_memcpy(ptr, str, _strlen(str));*/
 
 	return (ptr);
 }
@@ -29,10 +38,11 @@ char *_strdup(char *str)
  */
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
-	while (*s++)
+	while (s[i] != '\0')
 		i++;
+
 	return (i);
 }
 /**
