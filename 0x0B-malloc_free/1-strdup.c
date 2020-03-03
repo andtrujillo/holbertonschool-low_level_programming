@@ -1,4 +1,5 @@
-
+#include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 
 /**
@@ -9,27 +10,17 @@
 
 char *_strdup(char *str)
 {
-	char *ptr;
-	int c, i = 0;
-	
-	for (c = 0; str[c]; c++)
-				;
-		c += 1;
-	
-	if (str == NULL)
-		return (NULL);
+char *ptr;
+unsigned int i = 0;
 
-	ptr = malloc(c);
-
-	if (ptr == NULL)
-		return (NULL);
-
-	while (i < c)
-	{
-		ptr[i] = str[i];
-		i++;
-	}
-	ptr[i] = '\0';
-
-	return (ptr);
+if (str == 0)
+return (0);
+while (str[i] != 0)
+i++;
+i++;
+ptr = malloc(sizeof(char) * i);
+for (i = 0; str[i] != 0; i++)
+ptr[i] = str[i];
+ptr[i] = 0;
+return (ptr);
 }
