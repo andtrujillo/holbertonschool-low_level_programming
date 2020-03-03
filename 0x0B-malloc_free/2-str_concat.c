@@ -7,18 +7,30 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int *ptr = '\0';
-
-	if (!*s1 || !*s2)
-		return (ptr);
-	else
-		ptr = (int *)malloc(_strlen(s1) + _strlen(s2) + 1 * sizeof(int));
-
-	if (ptr)
-	{
-		ptr = _strcpy(ptr, s1);
-		ptr = _strcat(ptr, s2);	
-	}
+	char *dest = 0;
+	char *ptr;
+	int i, k = 0, len1, len2;
+	
+	for (len1 = 0; s1[len1] != 0; s1++)
+		;
+	for (len2 = 0; s2[len2] != 0; s2++)
+		;
+	dest = malloc(len1 + len2 + 1 * sizeof(char));
+	ptr = dest;
+ 
+    while (s1[i] != '\0' || s2[i] != '\0')
+    {
+		if (s1[i] == '\0' && s2 != '\0')
+		{
+			dest[i + k] = s2[k];
+			k++;
+		}
+		else 
+		{
+			dest[i] = s1[i];	
+			i++;
+		}
+    }
 
 	return (ptr);
 }
