@@ -40,7 +40,7 @@ char **strtow(char *s)
 		a[x] = malloc(sizeof(char) * wlen(s + i) + 1);
 		if (a[x] == NULL)
 		{
-			for (b = x - 1; b >= 0; b--)
+			for (b = x; b > 0; b--)
 				free(a[b]);
 			free(a);
 			return (NULL);
