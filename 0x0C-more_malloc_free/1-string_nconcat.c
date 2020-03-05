@@ -7,28 +7,30 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int tl, i, l;
+	unsigned int tl;
 	char *str;
+	char *save;
 
 	if (s1 == NULL)
 		s1 = "";
-	else if (s2 == NULL)
-		s2 = "";
-	
-	tl = _strlen(s1) + _strlen(s2);
-	str = malloc((1 + tl) * sizeof(char));
-	
+
+	tl = _strlen(s1);
+	str = malloc((1 + tl + n) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
-	if (n > _strlen(s2))
-		n = _strlen(s2);
-	
-	for (i = 0; s1[i] != '\0'; i++)
-		str[i] = s1[i];
-	for (l = 0; l < n && s2[l] != '\0'; l++)
-		str[i + l] = s2[l];
-	str[i + l] = '\0';
-	return (str);
+
+	save = str;
+	while (*s1)
+		*str++ = *s1++;
+
+	while (n--)
+	{
+		if (!*s2)
+			*str++ = 0;
+		else
+			*str++ = *s2++;
+	}
+	return (save);
 }
 /**
  * _strlen - function that computes length of string
@@ -38,7 +40,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 unsigned int _strlen(char *s)
 {
 	int i = 0;
-	while(*s++)
+
+	while (*s++)
 		i++;
 	return (i);
 }
