@@ -26,7 +26,10 @@ char **strtow(char *s)
 
 	a = malloc(sizeof(char *) * (string_length + 1));
 	if (a == NULL)
+	{
+		free(a);
 		return (NULL);
+	}
 
 	while (s[i] != '\0')
 	{
