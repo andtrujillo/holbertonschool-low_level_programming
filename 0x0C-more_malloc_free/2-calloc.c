@@ -18,11 +18,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	set_mem = malloc(nmemb * size);
-	
+
 	vptr = set_mem;
 	if (set_mem == NULL)
 		return (NULL);
-	
+
 	for (index = 0; index < (nmemb * size); index++)
 		set_mem[index] = 0;
 	return (vptr);
