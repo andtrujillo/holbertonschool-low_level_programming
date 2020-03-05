@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "holberton.h"
 int _strlen(char *s);
+int wc(char *str);
+int wlen(char *s);
+
 /**
  * strtow - function that splits a string into words
  *
@@ -12,68 +15,80 @@ int _strlen(char *s);
 char **strtow(char *s)
 {
 	char **a;
-	int x = 0, j = 0, inWord = 0, n = 0;
+	int j, string_length = 0, i = 0, x = 0, b = 0, k = 0;
 
-	if (s == 0 || *s == '\0')
+	if (s == NULL || s[0] == '\0')
 		return (NULL);
 
-	int string_length = _strlen(s);
-	char *ptr = s;
-	char *start;
-	char *end;
-	int i = 0;
-	while (*s)
+	string_length = wc(s);
+	if (string_length == 0)
+		return (NULL);
+
+	a = malloc(sizeof(char *) * (string_length + 1));
+	if (a == NULL)
+		return (NULL);
+
+	while (s[i] != '\0')
 	{
-		if (*s == ' ')
-			s++;
-
-		if (*s >= '!' && *s <= '~')
+		while (s[i] == ' ' && s[i] != '\0')
+			i++;
+		if (s[i] == '\0')
 		{
-			if(!inWord)
-			{
-				x++;
-				inWord = 1;
-				start = s;
-				printf("Start Address of %d word:%p\nValue:%c\n", i++, start, *s);
-			}
-			
-
-			if (*(s + 1) == ' ')
-			{
-				inWord = 0;
-				end = s;
-				printf("End Address of %d word:%p\nValue:%c\n", j++, end, *s);
-			}
-
-			printf("%c\n", *s);
-			n++;
-			s++;
+			a[x] = NULL;
+			return (a);
 		}
+		a[x] = malloc(sizeof(char) * wlen(s + i) + 1);
+		if (a[x] == NULL)
+		{
+			for (b = x - 1; b >= 0; b--)
+				free(a[b]);
+			free(a);
+			return (NULL);
+		}
+
+		k = wlen(s + i);
+		for (j = 0; j < k && s[i] != '\0'; j++, i++)
+			a[x][j] = s[i];
+
+		a[x][j] = '\0';
+		x++;
 	}
-	printf("Null:%d\n", x);
-	printf("Total:%d\n", n);
-	printf("Pointer Start:%p\n", ptr);
-	printf("Pointer End:%p\n", s);
-	printf("Pointer difference:%ld\n", s - ptr);
-	s = ptr;
-	printf("Pointer Reset:%p\n", s);
-	a = malloc(sizeof(char) * n + x);
-
-
-
-/*	printf("%d\n%s\n", string_length, s); */
+	a[x] = NULL;
 	return (a);
 }
 /**
-* _strlen - length of string
+* wlen - word length of string
 * @str: string to find the length of
-* Return: integer of the length of string
+* Return: integer word length of string
 */
-int _strlen(char *str)
+int wlen(char *str)
 {
 	int length = 0;
+	int o = 0;
 
-	while (*str++)
+	while (*(str + o) != ' ' && *(str + o) != '\0')
+	{
 		length++;
+		o++;
+	}
 	return (length);
+}
+/**
+ * wc - word count
+ * @str: string to count words
+ * Return: integer value
+ */
+int wc(char *str)
+{
+	int x, count;
+
+	x = 0;
+	count = 0;
+	while (str[x]  != '\0')
+	{
+		if (str[x] != ' ' && (str[x + 1] == ' ' || str[x + 1] != '\0'))
+			count++;
+		x++;
+	}
+	return (count);
 }
