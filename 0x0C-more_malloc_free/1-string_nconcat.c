@@ -3,6 +3,7 @@
  * string_nconcat - function that concatenates two strings
  * @s1: first string to append to
  * @s2: second string to copy from
+ * @n: number of bytes
  * Return: character array
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
