@@ -35,7 +35,7 @@ void *_realloc(void *ptr, unsigned int old_, unsigned int new_)
 		return (NULL);
 	if (ptr == NULL)
 	{
-ptr = malloc(newsize_);
+ptr = malloc(new_);
 		return (ptr);
 	}
 	while(new_--)
