@@ -10,11 +10,14 @@
 void *_realloc(void *ptr, unsigned int old_, unsigned int new_)
 {
 	char *cptr;
-	char *save = ptr;	
+	char *save = ptr;
+	
 	if (new_ > old_)
 	{
-		free(ptr);
 		cptr = malloc(new_);
+		while(n--)
+			*cptr++ = *ptr++;
+		free(ptr);
 		return (cptr);
 	}
 
@@ -26,7 +29,15 @@ void *_realloc(void *ptr, unsigned int old_, unsigned int new_)
 		free(ptr);
 		return (NULL);
 	}
-
+	
+	cptr = malloc(new_);
+	if (cptr == NULL)
+		return (NULL);
+	if (ptr == NULL)
+	{
+ptr = malloc(newsize_);
+		return (ptr);
+	}
 	while(new_--)
 		*cptr++ = *save++;
 	free(ptr);
