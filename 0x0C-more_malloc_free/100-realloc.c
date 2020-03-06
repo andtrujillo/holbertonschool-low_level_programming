@@ -19,7 +19,7 @@ void *_realloc(void *ptr, unsigned int old_, unsigned int new_)
 			return (NULL);
 		
 		while(old_--)
-			*cptr++ = *ptr++;
+			*cptr++ = *save++;
 		
 		free(ptr);
 		return (cptr);
