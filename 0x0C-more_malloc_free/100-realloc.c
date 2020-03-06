@@ -15,7 +15,7 @@ void *_realloc(void *ptr, unsigned int old_, unsigned int new_)
 	if (new_ > old_)
 	{
 		cptr = malloc(new_);
-		while(n--)
+		while(new_--)
 			*cptr++ = *ptr++;
 		free(ptr);
 		return (cptr);
